@@ -1,11 +1,17 @@
 {
   "name": "go-clipfile",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Extract file paths from macOS clipboard in Go language.",
   "license": "MIT",
   "scripts": {
     "test": "go test __tests__/*.go -v",
-    "release":"release-it"
-  }
+    "release": "release-it"
+  },
+  "keywords": [
+    "clipboard",
+    "file",
+    "osascript",
+    "path"
+  ]
 }

@@ -10,7 +10,7 @@
     "before:init": ["git fetch --tags"],
     "after:init": ["npm run test", "t2k"]
   },
-  "gitlab": {
+  "github": {
     "release": false,
     "releaseName": "Release ${version}",
     "skipChecks": true,
