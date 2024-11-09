@@ -1,24 +1,10 @@
 {
-  "name": "ushell-module-sqlite",
+  "name": "go-clipfile",
+  "private": true,
   "version": "1.0.0",
-  "description": "Fix problems for sqlite.",
-  "main": "index.sh",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/afeiship/ushell-module-sqlite.git"
-  },
-  "keywords": [
-    "ushell",
-    "unix",
-    "shell",
-    "ushell-module-sqlite"
-  ],
-  "authors": [
-    "feizheng <1290657123@qq.com>"
-  ],
+  "description": "Extract file paths from macOS clipboard in Go language.",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/afeiship/ushell-module-sqlite/issues"
-  },
-  "homepage": "https://github.com/afeiship/ushell-module-sqlite"
+  "scripts": {
+    "test": "go test __tests__/*.go -v"
+  }
 }

@@ -1,0 +1,12 @@
+name: golang-library
+files:
+  - '*.*'
+  - '.*'
+  - '*'
+  - '!node_modules'
+  - '!rif.config.yaml'
+replacements:
+  - from: /pkgjson-description/g
+    to: Extract file paths from macOS clipboard in Go language.
+  - from: /pkgjson/g
+    to: ${PROJECT_NAME}

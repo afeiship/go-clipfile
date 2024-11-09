@@ -1,11 +1,14 @@
-# ushell-module-sqlite
-> Fix problems for sqlite.
+# go-clipfile
+> Extract file paths from macOS clipboard in Go language.
 
-## install:
-```shell
-npm i -S afeiship/ushell-module-sqlite --registry=https://registry.npm.taobao.org
+## installation
+```sh
+go get -u github.com/afeiship/go-clipfile
 ```
 
-## resources:
+## usage
+```go
+package main
 
-## commands:
+// code here
+```
