@@ -10,15 +10,16 @@ go get -u github.com/afeiship/go-clipfile
 ```go
 package main
 
-import "github.com/afeiship/go-clipfile"
+import (
+	"fmt"
+	"github.com/afeiship/go-clipfile"
+)
 
 func main() {
-    path := clipfile.GetFilePath()
-
+	path := clipfile.GetFilePath()
 	if path == "" {
 		fmt.Println("Failed to get file path")
 	}
-
 	fmt.Println(path)
 }
 ```
