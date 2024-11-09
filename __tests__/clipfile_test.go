@@ -7,8 +7,8 @@ import (
 	"github.com/afeiship/go-clipfile"
 )
 
-func TestGetFilePath(f *testing.T) {
-	path := clipfile.GetFilePath()
+func TestGetPath(f *testing.T) {
+	path := clipfile.GetPath()
 
 	if path == "" {
 		f.Error("Failed to get file path")

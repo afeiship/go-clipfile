@@ -16,7 +16,7 @@ import (
 )
 
 func main() {
-	path := clipfile.GetFilePath()
+	path := clipfile.GetPath()
 	if path == "" {
 		fmt.Println("Failed to get file path")
 	}

@@ -8,7 +8,7 @@ import (
 
 const coreScripts = `tell application "System Events" to set filePath to (the clipboard as «class furl») as alias`
 
-func GetFilePath() string {
+func GetPath() string {
 	cmd := exec.Command("osascript", "-e", coreScripts, "-e", `POSIX path of filePath`)
 
 	// Capture the output of the command
