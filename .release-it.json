@@ -1,0 +1,22 @@
+{
+  "git": {
+    "changelog": "git log --pretty=format:\"* %s (%h)\" ${from}...${to}",
+    "requireCleanWorkingDir": true,
+    "requireBranch": false,
+    "requireUpstream": true,
+    "requireCommits": false
+  },
+  "hooks": {
+    "before:init": ["git fetch --tags"]
+  },
+  "gitlab": {
+    "release": false,
+    "releaseName": "Release ${version}",
+    "skipChecks": true,
+    "releseNotes": "git log --no-merges --pretty=format:\"* %s %h\" ${latestTag}...main"
+  },
+  "npm": {
+    "publish": false,
+    "skipChecks": true
+  }
+}
