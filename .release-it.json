@@ -1,13 +1,14 @@
 {
   "git": {
     "changelog": "git log --pretty=format:\"* %s (%h)\" ${from}...${to}",
-    "requireCleanWorkingDir": true,
+    "requireCleanWorkingDir": false,
     "requireBranch": false,
     "requireUpstream": true,
     "requireCommits": false
   },
   "hooks": {
-    "before:init": ["git fetch --tags"]
+    "before:init": ["git fetch --tags"],
+    "after:init": ["npm run test", "t2k"]
   },
   "gitlab": {
     "release": false,
